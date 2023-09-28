@@ -1,0 +1,11 @@
+nav {
+  position: relative;
+
+  .cart {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <Header />
+    <router-view />
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import Header from './components/Header/Header.vue'
+
+export default Vue.extend({
+  name: 'App',
+  components: {
+    Header
+  }
+})
+</script>
 
 <style lang="scss">
 #app {
@@ -15,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+body {
+  font-size: 16px;
 }
 
 nav {
